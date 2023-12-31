@@ -1,0 +1,26 @@
+ *{
+    background-color: #C8C29E;
+}
+
+.nav{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+.carousel{
+    display:flex;
+    justify-content: center;
+    gap:20px;
+}
+
+.imagescale:hover{
+    transition-duration: 1s;
+    transform: scale(1.25);
+}
+.imagescale:after{
+    content:"MAriella";
+
+}
