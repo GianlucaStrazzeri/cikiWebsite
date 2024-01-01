@@ -50,10 +50,14 @@ table {
 
 .nav{
     display:flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     gap:20px;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
+    margin-right: 20px;
+    margin-left:20px;
+    margin-bottom: 20px;
 }
 
 .carousel{
@@ -66,9 +70,15 @@ table {
 
 
 
- .imagescale, .imagescale1,.imagescale2, .imagescale3, .imagescale4{
-    animation: imagescale 3s linear infinite;
- 
+ .imagecarousel{
+    display:flex;
+    
+    align-items: center;
+    animation: imagescale 10s linear infinite;
+    border-radius: 20%;
+    border:solid;
+    border-color: black;
+    border-width: 3px;
 }
 
 
@@ -97,8 +107,6 @@ table {
     90%   {transform:translate(360px, 0px) ;}
       95%   {transform:translate(380px, 0px) ;}
     100% {transform:translate(400px, 0px) ;}
-
-
   }
 
   
