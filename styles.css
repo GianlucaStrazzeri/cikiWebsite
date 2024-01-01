@@ -1,3 +1,49 @@
+html, body, div, span, applet, object, iframe,
+ h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*My code start from here */
+ 
  *{
     background-color: #C8C29E;
 }
@@ -14,13 +60,47 @@
     display:flex;
     justify-content: center;
     gap:20px;
+   
+    
 }
 
-.imagescale:hover{
-    transition-duration: 1s;
-    transform: scale(1.25);
-}
-.imagescale:after{
-    content:"MAriella";
 
+
+ .imagescale, .imagescale1,.imagescale2, .imagescale3, .imagescale4{
+    animation: imagescale 3s linear infinite;
+ 
 }
+
+
+
+
+
+  @keyframes imagescale {
+    0%   {transform:translate(0px, 0px) ;}
+    5%   {transform:translate(20px, 0px) ;}
+    10%   {transform:translate(40px, 0px) ;}
+      15%   {transform:translate(60px, 0px) ;}
+    20%   {transform:translate(80px, 0px) ;}
+      25%   {transform:translate(100px, 0px) ;}
+    30%   {transform:translate(120px, 0px) ;}
+      35%   {transform:translate(140px, 0px) ;}
+    40%   {transform:translate(160px, 0px) ;}
+      45%   {transform:translate(180px, 0px) ;}
+    50%  {transform:translate(200px, 0px) ;}
+      55%   {transform:translate(220px, 0px) ;}
+    60%   {transform:translate(240px, 0px) ;}
+      65%   {transform:translate(260px, 0px) ;}
+    70%   {transform:translate(280px, 0px) ;}
+      75%   {transform:translate(300px, 0px) ;}
+      80%  {transform:translate(320px, 0px) ;}
+      85%   {transform:translate(340px, 0px) ;}
+    90%   {transform:translate(360px, 0px) ;}
+      95%   {transform:translate(380px, 0px) ;}
+    100% {transform:translate(400px, 0px) ;}
+
+
+  }
+
+  
+
+    
