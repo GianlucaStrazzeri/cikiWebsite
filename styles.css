@@ -1,5 +1,5 @@
 html, body, div, span, applet, object, iframe,
- h2, h3, h4, h5, h6, p, blockquote, pre,
+  h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
@@ -44,7 +44,7 @@ table {
 
 /*My code start from here */
  
- *{
+ body{
     background-color: #C8C29E;
 }
 
@@ -68,8 +68,6 @@ table {
     
 }
 
-
-
  .imagecarousel{
     display:flex;
     
@@ -80,9 +78,6 @@ table {
     border-color: black;
     border-width: 3px;
 }
-
-
-
 
 
   @keyframes imagescale {
@@ -109,6 +104,24 @@ table {
     100% {transform:translate(400px, 0px) ;}
   }
 
-  
+  .flexing-boxes{
+    max-width: 100%;
+    display:flex;
+    justify-content: center;
+    background-color: #C8C29E;
+  }
 
+    .three-boxes{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        max-width: 70%;
+       gap:80px;
+    }
+
+    .box{
+        border-radius: 20%;
+        background-color: white;
+        margin-top:20px;
+    }
     
